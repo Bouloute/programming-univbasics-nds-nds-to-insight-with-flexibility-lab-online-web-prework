@@ -86,7 +86,7 @@ def gross_per_studio(collection)
    
     index += 1
   end
-pp ret
+  
   ret
 end
 
