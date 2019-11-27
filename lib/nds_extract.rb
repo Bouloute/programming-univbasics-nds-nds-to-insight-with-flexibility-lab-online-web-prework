@@ -77,9 +77,6 @@ def gross_per_studio(collection)
   index = 0
   
   while index < collection.length do
-   # puts
-  #  puts collection[index][:studio] 
-  #  puts collection[index][:worldwide_gross]
     
     if ret[collection[index][:studio]] == nil 
       ret[collection[index][:studio]] = collection[index][:worldwide_gross] 
@@ -87,12 +84,6 @@ def gross_per_studio(collection)
       ret[collection[index][:studio]] = ret[collection[index][:studio]] + collection[index][:worldwide_gross] 
     end
    
-    #  ret[collection[index][:studio]] = ret[:studio] + collection[index]
-    #  puts "had previous key : " + collection[index][:studio]
-    #else
-    #  ret[collection[index][:studio]] = collection[index][:worldwide_gross]
-    #  puts "created key : " + collection[index][:studio]
-    #end
     index += 1
   end
 pp ret
