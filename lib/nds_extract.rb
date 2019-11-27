@@ -81,7 +81,7 @@ def gross_per_studio(collection)
     if ret[collection[index][:studio]] == nil 
       ret[collection[index][:studio]] = collection[index][:worldwide_gross] 
     else
-      ret[collection[index][:studio]] = ret[collection[index][:studio]] + collection[index][:worldwide_gross] 
+      ret[collection[index][:studio]] += collection[index][:worldwide_gross]  #r#et[collection[index][:studio]] + collection[index][:worldwide_gross] 
     end
    
     index += 1
